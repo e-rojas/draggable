@@ -3,7 +3,34 @@
   padding: 0px;
   background:#F2F2F2 ;
 }
+.delivery-box {
+  margin: 10px 0px;
+  padding: 10px;
 
+  width: 80%;
+  cursor: move;
+  border-radius: 10px;
+  span{
+    background-color: transparent;
+    margin-bottom: 10px;
+  }
+ form{
+   margin:5px 0px;
+   background-color: transparent;
+ 
+  input[type=text] {
+    width: 100%;
+    padding: 9px 20px;
+    border: none;
+    box-sizing: border-box;
+  }
+  button{
+    margin-top: 10px;
+    padding: 5px ;
+    border-radius: 5px;
+  }
+}
+}
 .container{
   padding: 10px;
   .logo{
