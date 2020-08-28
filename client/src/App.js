@@ -1,8 +1,11 @@
 import React from "react";
 import "./App.scss";
 import logo from "./images/logo.png";
-
+import DraggableBox from "./components/draggabble";
 export default function App() {
+  // ::::::: RANDOM ID ::::::::::::::
+  const ID = () => "_" + Math.random().toString(36).substr(2, 9);
+
   return (
     <div className="container">
       <img className="logo" src={logo} alt="logo" />
