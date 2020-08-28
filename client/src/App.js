@@ -6,7 +6,18 @@ import DraggableBox from "./components/draggabble";
 export default function App() {
   // ::::::: RANDOM ID ::::::::::::::
   const ID = () => "_" + Math.random().toString(36).substr(2, 9);
-
+  // ::::::: FORM HANDLER ::::::::::::::
+  const formHandler = (e, btn_id) => {
+    const formData = new FormData(e.target);
+    const data = {};
+    e.preventDefault();
+    for (let entry of formData.entries()) {
+      data[entry[0]] = entry[1];
+      data.id = btn_id;
+    }
+    document.getElementById(btn_id).disabled = true;
+    e.target.reset();
+  };
   return (
     <div className="container">
       <img className="logo" src={logo} alt="logo" />
@@ -41,6 +52,7 @@ export default function App() {
                 id={box.id}
                 title={box.title}
                 color={box.color}
+                formHandler={(e) => formHandler(e, box.id)}
               />
             ))}
           </div>
@@ -72,6 +84,7 @@ export default function App() {
                 id={box.id}
                 title={box.title}
                 color={box.color}
+                formHandler={(e) => formHandler(e, box.id)}
               />
             ))}
           </div>
@@ -103,6 +116,7 @@ export default function App() {
                 id={box.id}
                 title={box.title}
                 color={box.color}
+                formHandler={(e) => formHandler(e, box.id)}
               />
             ))}
           </div>
