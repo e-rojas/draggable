@@ -22,7 +22,20 @@ This is a very simple application where you can drag each form on its respective
 * ![](https://github.com/e-rojas/draggable/blob/master/client/src/images/step-5.png)
 
 #### Fire up the server and client
-* Within the server folder open terminal and type npm start
-* Within the client folder open terminal and type npm start
+* Within the server folder open terminal and type npm start : should give you this => 
+```
+[nodemon] starting `node app.js`
+Server listening on port4009
+Connected to MongoDB
+```
+* Within the client folder open terminal and type npm start : should give you this=>
+```
+Compiled successfully!
+
+You can now view client in the browser.
+
+  Local:            http://localhost:3000
+  On Your Network:  http://192.168.0.21:3000
+```
 
 HAVE FUN!! :)
