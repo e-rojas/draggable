@@ -15,5 +15,8 @@ This is a very simple application where you can drag each form on its respective
 * To run type: brew services start mongodb-community@4.4
 * To stop run: brew services stop mongodb-community@4.4
 * Fire up mongodb vs extension :
-* ![]
-
+* ![](https://github.com/e-rojas/draggable/blob/master/client/src/images/step-1.png)
+* ![](https://github.com/e-rojas/draggable/blob/master/client/src/images/step-2.png)
+* ![](https://github.com/e-rojas/draggable/blob/master/client/src/images/step-3.png)
+* ![](https://github.com/e-rojas/draggable/blob/master/client/src/images/step-4.png)
+* ![](https://github.com/e-rojas/draggable/blob/master/client/src/images/step-5.png)
