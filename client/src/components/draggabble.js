@@ -13,7 +13,13 @@ export default function draggableBox({
       <div className={classname} style={{ backgroundColor: color }}>
         <span>{title}</span>
         <form onSubmit={formHandler}>
-          <input name="message" type="text" placeholder="Type text" required />
+          <input
+            autoComplete="off"
+            name="message"
+            type="text"
+            placeholder="Type text"
+            required
+          />
           <button id={id}>Submit</button>
         </form>
       </div>

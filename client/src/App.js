@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.scss";
 import logo from "./images/logo.png";
-
+import axios from "axios";
 import DraggableBox from "./components/draggabble";
 export default function App() {
   // ::::::: RANDOM ID ::::::::::::::
@@ -12,11 +12,21 @@ export default function App() {
     const data = {};
     e.preventDefault();
     for (let entry of formData.entries()) {
-      data[entry[0]] = entry[1];
+      data[entry[0]] = entry[1].charAt(0).toUpperCase() + entry[1].slice(1);
       data.id = btn_id;
+      console.log(data);
     }
     document.getElementById(btn_id).disabled = true;
     e.target.reset();
+    // ::::::::: AXIOS DATA SUBMISSION ::::::::::::::::
+    axios
+      .post("localhost://3000/api")
+      .then((response) => {
+        console.log(response.data);
+      })
+      .catch((error) => {
+        console.log("Error Submitting Data", error);
+      });
   };
   return (
     <div className="container">
