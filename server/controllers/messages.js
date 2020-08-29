@@ -6,10 +6,10 @@ const Message = require("../models/message");
 router.post("/", (req, res) => {
   Message.create(req.body)
     .then((data) => {
-      res.send(data);
+      res.status(201).send({ message: "Succesfully saved to mongoDB!" });
     })
     .catch((error) => {
-      res.status(404).send({ message: "Message not saved to DB", error });
+      res.status(400).send({ message: "Message not saved to DB", error });
     });
 });
 

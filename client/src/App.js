@@ -13,14 +13,13 @@ export default function App() {
     e.preventDefault();
     for (let entry of formData.entries()) {
       data[entry[0]] = entry[1].charAt(0).toUpperCase() + entry[1].slice(1);
-      data.id = btn_id;
-      console.log(data);
+      data.form_id = btn_id;
     }
     document.getElementById(btn_id).disabled = true;
     e.target.reset();
     // ::::::::: AXIOS DATA SUBMISSION ::::::::::::::::
     axios
-      .post("localhost://3000/api")
+      .post("http://localhost:4009/api-message", data)
       .then((response) => {
         console.log(response.data);
       })
