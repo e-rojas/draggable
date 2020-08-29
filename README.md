@@ -20,3 +20,9 @@ This is a very simple application where you can drag each form on its respective
 * ![](https://github.com/e-rojas/draggable/blob/master/client/src/images/step-3.png)
 * ![](https://github.com/e-rojas/draggable/blob/master/client/src/images/step-4.png)
 * ![](https://github.com/e-rojas/draggable/blob/master/client/src/images/step-5.png)
+
+#### Fire up the server and client
+* Within the server folder open terminal and type npm start
+* Within the client folder open terminal and type npm start
+
+HAVE FUN!! :)
