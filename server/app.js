@@ -10,6 +10,7 @@ port = process.env.PORT;
 
 require("./database/db"); //required db
 
+app.use("/form", require("./controllers/")); //Router
 app.listen(port, () => {
   console.log("Server listening on port" + port);
 });
