@@ -12,3 +12,5 @@ router.post("/", (req, res) => {
       res.status(404).send({ message: "Message not saved to DB", error });
     });
 });
+
+module.exports = router;

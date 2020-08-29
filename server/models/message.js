@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-module.exports = mongoose.model("form", {
+module.exports = mongoose.model("message", {
   message: {
     type: String,
     required: true,
