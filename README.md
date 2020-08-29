@@ -6,3 +6,14 @@ This is a very simple application where you can drag each form on its respective
 ## Steps to follow:
 * Download the repo: https://github.com/e-rojas/draggable.git
 * Install the following dependencies within each individual main folder, as client is the front-end of the application. cd (client/) or (server/) => npm install. 
+
+### Install MongoDB
+* Install MongoDB for VScode extension https://marketplace.visualstudio.com/items?itemName=mongodb.mongodb-vscode
+* Install mongo drivers : https://docs.mongodb.com/manual/tutorial/install-mongodb-on-os-x/
+*   $ brew tap mongodb/brew
+*   $ brew install mongodb-community@4.4
+* To run type: brew services start mongodb-community@4.4
+* To stop run: brew services stop mongodb-community@4.4
+* Fire up mongodb vs extension :
+* ![]
+
