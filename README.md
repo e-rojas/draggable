@@ -22,6 +22,7 @@ This is a very simple application where you can drag each form on its respective
 * ![](https://github.com/e-rojas/draggable/blob/master/client/src/images/step-5.png)
 
 #### Fire up the server and client
+* Within the server folder MAKE SURE YOU RENAME THE .env.sample to .env otherwise your environment variables will not connect to mongodb or your port.
 * Within the server folder open terminal and type npm start : should give you this => 
 ```
 [nodemon] starting `node app.js`
